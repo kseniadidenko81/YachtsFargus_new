@@ -141,42 +141,42 @@ $(function () {
 });
 
 //  Go to page
-// $(function () {
-//   $(".navbar-nav .nav-link").on("click", function (event) {
-//     event.preventDefault();
+$(function () {
+  $(".navbar-nav .nav-link").on("click", function (event) {
+    event.preventDefault();
 
-//     var targetPage = $(this).attr("href");
+    var targetPage = $(this).attr("href");
 
-//     if (targetPage !== "#") {
-//       window.location.href = targetPage;
-//     }
-//   });
-// });
+    if (targetPage !== "#") {
+      window.location.href = targetPage;
+    }
+  });
+});
 
 // ANCHOR
-// document
-//   .querySelector("#scroll-to-footer .smoothScroll")
-//   .addEventListener("click", function (event) {
-//     event.preventDefault();
+document
+  .querySelector("#scroll-to-footer .smoothScroll")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
 
-//     let targetId = this.getAttribute("data-target");
+    let targetId = this.getAttribute("data-target");
 
-//     if (!targetId || targetId === "#") return;
+    if (!targetId || targetId === "#") return;
 
-//     let targetSection = document.querySelector(targetId);
+    let targetSection = document.querySelector(targetId);
 
-//     if (targetSection) {
-//       let navbarHeight = 49;
-//       let targetPosition =
-//         targetSection.getBoundingClientRect().top +
-//         window.scrollY -
-//         navbarHeight;
+    if (targetSection) {
+      let navbarHeight = 49;
+      let targetPosition =
+        targetSection.getBoundingClientRect().top +
+        window.scrollY -
+        navbarHeight;
 
-//       window.scrollTo({
-//         top: targetPosition,
-//         behavior: "smooth",
-//       });
-//     } else {
-//       console.error("Target section not found:", targetId);
-//     }
-//   });
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth",
+      });
+    } else {
+      console.error("Target section not found:", targetId);
+    }
+  });
