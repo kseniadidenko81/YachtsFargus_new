@@ -152,8 +152,8 @@ h1,
 h2,
 .h2 {
   font-family: var(--additional-font-family);
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 28px;
+  line-height: 38px;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -253,13 +253,113 @@ h5,
   }
 }
 
+.pt-60 {
+  padding-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .pt-60 {
+    padding-top: 60px;
+  }
+}
+
 .mt-60 {
   margin-top: 40px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .mt-60 {
     margin-top: 60px;
+  }
+}
+
+.mb-60 {
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .mb-60 {
+    margin-bottom: 60px;
+  }
+}
+
+.pb-100 {
+  padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .pb-100 {
+    padding-bottom: 100px;
+  }
+}
+
+.pt-100 {
+  padding-top: 50px;
+}
+
+@media (min-width: 768px) {
+  .pt-100 {
+    padding-top: 100px;
+  }
+}
+
+.mt-100 {
+  margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+  .mt-100 {
+    margin-top: 100px;
+  }
+}
+
+.mb-100 {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .mb-100 {
+    margin-bottom: 100px;
+  }
+}
+
+.my-60 {
+  margin: 40px 0;
+}
+
+@media (min-width: 768px) {
+  .my-60 {
+    margin: 60px 0;
+  }
+}
+
+.py-60 {
+  padding: 40px 0;
+}
+
+@media (min-width: 768px) {
+  .py-60 {
+    padding: 60px 0;
+  }
+}
+
+.py-100 {
+  padding: 50px 0;
+}
+
+@media (min-width: 768px) {
+  .py-100 {
+    padding: 100px 0;
+  }
+}
+
+.my-100 {
+  margin: 50px 0;
+}
+
+@media (min-width: 768px) {
+  .my-100 {
+    margin: 100px 0;
   }
 }
 
@@ -395,16 +495,6 @@ img {
   font-size: 14px;
   line-height: 18px;
   color: rgba(24, 29, 56, 0.8);
-}
-
-.section-padding {
-  padding: 30px 0;
-}
-
-@media (min-width: 768px) {
-  .section-padding {
-    padding: 60px 0;
-  }
 }
 
 .section-bg-white {
@@ -1189,12 +1279,12 @@ header .main-content {
 }
 
 .section-card .additional-btn-arrow {
-  padding: 50px 0 26px;
+  padding: 50px 0 0;
 }
 
 @media (min-width: 768px) {
   .section-card .additional-btn-arrow {
-    padding: 90px 0 30px;
+    padding: 90px 0 0;
   }
 }
 
@@ -1592,4 +1682,30 @@ header .phone-two::before {
   .card-container .col {
     flex: 1 1 100%;
   }
+}
+
+.footer-bottom {
+  max-width: 100%;
+  gap: 18px !important;
+}
+
+@media (min-width: 768px) {
+  .footer-bottom {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-bottom {
+    max-width: 60%;
+  }
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: #002b2d;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
 }
