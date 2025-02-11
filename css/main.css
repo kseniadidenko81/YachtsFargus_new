@@ -1140,6 +1140,14 @@ header .main-content {
   gap: 8px;
 }
 
+.footer-card .social-icon {
+  transition: all 0.5s ease-in-out;
+}
+
+.footer-card .social-icon:hover {
+  transform: scale(1.08);
+}
+
 @media (min-width: 768px) {
   .section-card-sail .grid-section {
     grid-template-columns: repeat(2, 1fr);
