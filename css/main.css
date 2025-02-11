@@ -1606,7 +1606,7 @@ header .phone-two::before {
 .back-to-top-btn {
   position: fixed;
   bottom: 40px;
-  right: 40px;
+  right: 20px;
   border: none;
   cursor: pointer;
   display: none;
