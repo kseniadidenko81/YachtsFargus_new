@@ -1614,11 +1614,11 @@ header .phone-two::before {
   background-color: #38addf;
   padding: 10px;
   background-image: url("../img/to-top.svg");
-  background-size: 33px;
+  background-size: 28px;
   background-repeat: no-repeat;
   background-position: center;
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   border-radius: 8px;
   z-index: 100;
   transition: transform 0.3s ease;
@@ -1627,6 +1627,14 @@ header .phone-two::before {
 .back-to-top-btn:hover {
   opacity: 0.85;
   transform: translateY(-6px);
+}
+
+@media (min-width: 580px) {
+  .back-to-top-btn {
+    background-size: 33px;
+    width: 48px;
+    height: 48px;
+  }
 }
 
 /* CHARTER TEMPLATE */
