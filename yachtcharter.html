@@ -1,1169 +1,1711 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Charter Page</title>
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Inter/Inter-Regular.woff2") format("woff2");
+}
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta
-      name="description"
-      content="Fergus Yachting. Classic Yacht Charter."
-    />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Inter/Inter-Medium.woff2") format("woff2");
+}
 
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin="anonymous"
-    />
+@font-face {
+  font-display: swap;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Lora/Lora-Medium.woff2") format("woff2");
+}
 
-    <link
-      rel="preload"
-      href="fonts/Inter/Inter-Regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/Lora/Lora-Regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/Inter/Inter-Medium.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/Lora/Lora-Medium.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/Inter/Inter-SemiBold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/Lora/Lora-SemiBold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/Inter/Inter-Bold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/Lora/Lora-Bold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Inter/Inter-Bold.woff2") format("woff2");
+}
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body
-    data-spy="scroll"
-    data-target="#navbarNav"
-    data-offset="50"
-    class="position-relative"
-  >
-    <header class="position-relative">
-      <nav
-        class="navbar navbar-expand-lg fixed-top"
-        id="navbar"
-        aria-label="Main navigation"
-      >
-        <div class="container">
-          <a
-            class="navbar-brand d-flex justify-content-center align-items-center"
-            href="index.html"
-          >
-            <span class="d-flex align-items-center">FERGUS</span>
-            <img src="img/logo-header.svg" alt="Logo" class="center-logo" />
-            <span class="d-flex align-items-center">YACHTS</span>
-          </a>
+@font-face {
+  font-display: swap;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Lora/Lora-Bold.woff2") format("woff2");
+}
 
-          <div class="d-flex align-items-center">
-            <button
-              class="navbar-toggler collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarsExample07"
-              aria-controls="navbarsExample07"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-          </div>
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Inter/Inter-SemiBold.woff2") format("woff2");
+}
 
-          <div
-            class="navbar-collapse collapse align-items-center align-items-xl-end flex-column"
-            id="navbarsExample07"
-          >
-            <div class="pb-2 contact-wrapp d-flex">
-              <span class="px-2 contact-icon phone">+47 572 108 00</span>
-              <span class="px-2 contact-icon phone-two">+46 188 008 125</span>
-            </div>
-            <ul class="nav nav-pills">
-              <li class="nav-item">
-                <a href="#" class="nav-link px-2" aria-current="page"
-                  >Yacht Charter
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link px-2">YACHT MANAGEMENT</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link px-2">yacht lawyer</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link px-2">about</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+:root {
+  --base-font-family: "Inter", sans-serif;
+  --additional-font-family: "Lora", sans-serif;
+}
 
-      <h1 class="slogan slogan-charter container">
-        fergus yachts: yachting which make sence based on traditions & Community
-      </h1>
-      <div class="row text-center main-content">
-        <div class="col">
-          <div class="image-wrapper first-block">
-            <div>
-              <picture>
-                <img
-                  src="img/charter/main-img.png"
-                  srcset="
-                    img/charter/main-img.png  768w,
-                    img/charter/main-img.png 1200w
-                  "
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
-                  alt="main-img"
-                  width="535"
-                  height="357"
-                  loading="eager"
-                  style="height: 100vh"
-                />
-              </picture>
-              <div class="overlay"></div>
-            </div>
+html,
+body {
+  overflow-x: hidden;
+}
 
-            <div class="overlay-text">
-              <div class="h1">Sailing with passion</div>
-              <p class="pt-2 text-uppercase">
-                Focusing on route planning, destination exploration, and sailing
-                expertise.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main>
-      <!--  -->
-      <div class="section-info section-bg-orange">
-        <div class="container py-3">
-          <div
-            class="col-md-10 col-lg-8 m-auto d-flex justify-content-between align-items-sm-center"
-          >
-            <p class="text-uppercase pb-3 pb-sm-0 pe-0 pe-sm-3">Overview</p>
-            <div
-              class="top-section d-flex justify-content-center justify-content-sm-around w-100"
-            >
-              <div class="d-flex justify-content-between" style="">
-                <span class="text-center">X</span>
-                <span class="text-center">X</span>
-                <span class="text-center">X</span>
-              </div>
-              <div class="text-center">X</div>
-              <div class="d-flex justify-content-between" style="">
-                <span class="text-center">X</span>
-                <span class="text-center">X</span>
-                <span class="text-center">X</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--  -->
-      <section class="section-bg-orange section-padding">
-        <div class="container">
-          <div class="grid-section align-items-center">
-            <div class="grid-item order-2 order-lg-0">
-              <div class="pre-text">
-                Year-round premium yacht charter in the Canary Islands.
-              </div>
-              <h2 class="my-38">Charter Here, and Explore Anywhere.</h2>
-              <p>
-                Enhance your adventure on a two-day yacht charter from Tenerife
-                to La Gomera or La Palma. This unforgettable journey focuses on
-                exploring stunning destinations, enjoying personalized service,
-                and experiencing sailing in real conditions.
-              </p>
-              <a href="#" class="btn custom-btn custom-btn-mini my-38"
-                >book now</a
-              >
-              <div class="text-small">
-                <span class="d-block">*</span>
-                <span class="d-block">Next charter date is xx/xx/2025.</span>
-                <span class="d-block"
-                  >Bookings are accepted until xx/xx/2025.</span
-                >
-              </div>
-            </div>
-            <div
-              class="grid-item-img order-1 order-lg-0 col-12 col-md-10 col-lg-12 m-auto"
-            >
-              <picture>
-                <img
-                  src="img/charter/surfer-img-1.png"
-                  srcset="
-                    img/charter/surfer-img-1.png  768w,
-                    img/charter/surfer-img-1.png 1200w
-                  "
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
-                  alt="surfer-img"
-                  width="535"
-                  height="357"
-                  loading="eager"
-                  class="rounded-20"
-                />
-              </picture>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--  -->
-      <section class="section-padding">
-        <div class="container">
-          <div class="row text-center pb-60">
-            <div class="col-md-10 m-auto">
-              <p class="pre-text">What You'll Gain</p>
-              <h2 class="my-38">You'll be ready for any sailing adventure</h2>
-              <p class="sub-text">
-                Enhance your charter experience with our expert-led services
-                tailored for all levels. Our personalized itineraries ensure
-                you're ready for any adventure on the water. Join small groups
-                and explore breathtaking destinations.
-              </p>
-            </div>
-          </div>
-          <div class="row card-container">
-            <div class="col">
-              <div class="card blue text-center p-20">
-                <h2 class="h4 pb-14">Hands-on adventure</h2>
-                <p>
-                  You'll navigate the yacht through stunning waters, adjusting
-                  course and sails with the guidance of expert crews.
-                </p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card yellow text-center p-20">
-                <h2 class="h4 pb-14">Exploration skills</h2>
-                <p>
-                  We'll guide you in charting your course and navigating the
-                  waters, relying on traditional methods for a truly immersive
-                  experience.
-                </p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card blue text-center p-20">
-                <h2 class="h4 pb-14">Weather Insight</h2>
-                <p>
-                  Understand marine weather patterns, recognize changing
-                  conditions, and navigate safely through diverse environments.
-                </p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card yellow text-center p-20">
-                <h2 class="h4 pb-14">Essential knots</h2>
-                <p>
-                  Learn essential knots for anchoring, securing your yacht, and
-                  ensuring smooth operations on board.
-                </p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card blue text-center p-20">
-                <h2 class="h4 pb-14">Safety techniques</h2>
-                <p>
-                  Understand onboard safety protocols, emergency procedures, and
-                  how to use rescue equipment effectively.
-                </p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card yellow text-center p-20">
-                <h2 class="h4 pb-14">tech knowledge</h2>
-                <p>
-                  Discover yacht structure, sail mechanics, and other vital
-                  components.
-                </p>
-              </div>
-            </div>
-          </div>
-          <a href="#" class="btn custom-btn custom-btn-mini my-38 mx-auto"
-            >book now</a
-          >
-        </div>
-      </section>
-      <!--  -->
-      <section class="section-card section-card-three section-padding">
-        <div class="container">
-          <div class="row text-center pb-60">
-            <div class="col-md-10 m-auto">
-              <p class="pre-text">Charter Structure</p>
-              <h2 class="my-38">
-                Tailored itineraries, unforgettable experiences
-              </h2>
-              <p class="sub-text">
-                Enhance your charter experience with personalized itineraries
-                led by experts. Our tailored journeys ensure you're ready for
-                any adventure. Join small groups, explore breathtaking
-                destinations.
-              </p>
-            </div>
-          </div>
+html {
+  scroll-behavior: smooth;
+}
 
-          <div class="grid-section">
-            <div class="card section-bg-orange">
-              <picture>
-                <img
-                  src="img/charter/card-image-1.png"
-                  srcset="
-                    img/charter/card-image-1.png  768w,
-                    img/charter/card-image-1.png 1200w
-                  "
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
-                  alt="card-image"
-                  width="535"
-                  height="357"
-                  loading="eager"
-                  class="rounded-20"
-                />
-              </picture>
-              <div
-                class="content-card text-center justify-content-start pt-3 pb-3 pb-md-4 px-3 px-md-4"
-              >
-                <h4>Yacht Charter</h4>
-                <p class="pt-3">
-                  An immersive yacht charter experience in diverse conditions.
-                  Learn to navigate and anchor with confidence.
-                </p>
-              </div>
-            </div>
+body {
+  background: #fff;
+  font-family: var(--base-font-family);
+  color: #181038;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+}
 
-            <div class="card section-bg-orange">
-              <picture>
-                <img
-                  src="img/charter/card-image-2.png"
-                  srcset="
-                    img/charter/card-image-2.png  768w,
-                    img/charter/card-image-2.png 1200w
-                  "
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
-                  alt="card-image"
-                  width="535"
-                  height="357"
-                  loading="eager"
-                  class="rounded-20"
-                />
-              </picture>
-              <div
-                class="content-card text-center justify-content-start pt-3 pb-3 pb-md-4 px-3 px-md-4"
-              >
-                <h4>Yacht Management</h4>
-                <p class="pt-3">
-                  This 6-hour course for yacht owners covers management,
-                  maintenance, and crew coordination for smooth operations.
-                </p>
-              </div>
-            </div>
+::-webkit-scrollbar {
+  width: 6px;
+}
 
-            <div class="card section-bg-orange">
-              <picture>
-                <img
-                  src="img/charter/card-image-3.png"
-                  srcset="
-                    img/charter/card-image-3.png  768w,
-                    img/charter/card-image-3.png 1200w
-                  "
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
-                  alt="card-image"
-                  width="535"
-                  height="357"
-                  loading="eager"
-                  class="rounded-20"
-                />
-              </picture>
-              <div
-                class="content-card text-center justify-content-start pt-3 pb-3 pb-md-4 px-3 px-md-4"
-              >
-                <h4>Yacht Lawyer</h4>
-                <p class="pt-3">
-                  Master yacht law in this 6-hour session, covering contracts,
-                  regulations, and key legal aspects.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--  -->
-      <section class="section-padding section-icon">
-        <div class="container">
-          <div class="row text-center pb-60">
-            <div class="col-md-10 m-auto">
-              <p class="pre-text">Charter Details</p>
-              <h2 class="mb-0">What to Expect</h2>
-            </div>
-          </div>
+::-webkit-scrollbar-thumb {
+  background: #efedeb;
+  border-radius: 6px;
+}
 
-          <div class="grid-section pt-0">
-            <div
-              class="grid-item d-flex flex-column align-items-center text-center"
-            >
-              <img
-                src="img/charter/icon-1.svg"
-                alt="icon"
-                style="width: 50px; height: 50px"
-              />
-              <p class="pt-20 sub-text-title text-uppercase">DURATION</p>
-              <p class="pt-32 sub-text">
-                2 days of immersive, hands-on yacht charter experience.
-              </p>
-            </div>
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 24px;
+  }
 
-            <div
-              class="grid-item d-flex flex-column align-items-center text-center"
-            >
-              <img
-                src="img/charter/icon-2.svg"
-                alt="icon"
-                style="width: 50px; height: 50px"
-              />
-              <p class="pt-20 sub-text-title text-uppercase">Yacht Type</p>
-              <p class="pt-32 sub-text">
-                Comfortable 45-foot yacht, fully equipped for safe navigation
-              </p>
-            </div>
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
 
-            <div
-              class="grid-item d-flex flex-column align-items-center text-center"
-            >
-              <img
-                src="img/charter/icon-3.svg"
-                alt="icon"
-                style="width: 50px; height: 50px"
-              />
-              <p class="pt-20 sub-text-title text-uppercase">Instructor</p>
-              <p class="pt-32 sub-text">
-                Highly experienced skipper with decades of practical sailing
-                experience
-              </p>
-            </div>
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-            <div
-              class="grid-item d-flex flex-column align-items-center text-center"
-            >
-              <img
-                src="img/charter/icon-4.svg"
-                alt="icon"
-                style="width: 50px; height: 50px"
-              />
-              <p class="pt-20 sub-text-title text-uppercase">participants</p>
-              <p class="pt-32 sub-text">
-                Small group (up to 6) for personalized guidance
-              </p>
-            </div>
-          </div>
-          <div class="grid-section pt-0 mt-40">
-            <div
-              class="grid-item d-flex flex-column align-items-center text-center"
-            >
-              <img
-                src="img/charter/icon-5.svg"
-                alt="icon"
-                style="width: 50px; height: 50px"
-              />
-              <p class="pt-20 sub-text-title text-uppercase">Accommodation</p>
-              <p class="pt-32 sub-text">Authentic on-board yacht living</p>
-            </div>
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-            <div
-              class="grid-item d-flex flex-column align-items-center text-center"
-            >
-              <img
-                src="img/charter/icon-6.svg"
-                alt="icon"
-                style="width: 50px; height: 50px"
-              />
-              <p class="pt-20 sub-text-title text-uppercase">Meals</p>
-              <p class="pt-32 sub-text">
-                Self-catering or local restaurant options
-              </p>
-            </div>
+a {
+  color: #38addf;
+  text-decoration-color: #38addf;
+  font-weight: normal;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
 
-            <div
-              class="grid-item d-flex flex-column align-items-center text-center"
-            >
-              <img
-                src="img/charter/icon-7.svg"
-                alt="icon"
-                style="width: 50px; height: 50px"
-              />
-              <p class="pt-20 sub-text-title text-uppercase">
-                Participant Requirements
-              </p>
-              <p class="pt-32 sub-text">
-                Love for exploration or previous charter experience • Good
-                physical condition, ready for adventure
-              </p>
-            </div>
+a:hover,
+a:active {
+  outline: none;
+  text-decoration: none;
+  text-decoration-color: #38addf;
+}
 
-            <div
-              class="grid-item d-flex flex-column align-items-center text-center"
-            >
-              <img
-                src="img/charter/icon-8.svg"
-                alt="icon"
-                style="width: 50px; height: 50px"
-              />
-              <p class="pt-20 sub-text-title text-uppercase">Charter Price</p>
-              <p class="pt-32 sub-text">700 EUR per person</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--  -->
-      <div class="section-info section-bg-orange">
-        <div
-          class="container d-flex flex-column flex-md-row justify-content-between align-items-center py-3"
-        >
-          <p class="fw-bold pb-3 pb-sm-0 pe-0 pe-sm-3">
-            Set Sail Soon! Next charter departs on xx/xx/2025. Book your
-            adventure by xx/xx/2025.
-          </p>
-          <a href="#" class="btn custom-btn custom-btn-mini">book now</a>
-        </div>
-      </div>
-      <!--  -->
-      <section class="section-card-sail section-bg-orange section-padding mt-60">
-        <div class="row text-center pb-60">
-          <div class="col-md-10 m-auto">
-            <p class="pre-text">Meet Our Expert TEAM</p>
-            <h2 class="my-38">
-              Sail with the Best, <br />Explore with Confidence.
-            </h2>
-          </div>
-        </div>
+a:focus-visible {
+  outline: none;
+}
 
-        <div class="container">
-          <div class="grid-section">
-            <div class="card section-bg-white">
-              <picture>
-                <img
-                  src="img/card-image-8.png"
-                  srcset="img/card-image-8.png 768w, img/card-image-8.png 1200w"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
-                  alt="card-image"
-                  width="535"
-                  height="357"
-                  loading="eager"
-                  class="rounded-20"
-                />
-              </picture>
-              <div
-                class="content-card text-center justify-content-start py-3 px-3 px-md-4"
-              >
-                <h4 class="text-uppercase">Igor Akimenko</h4>
-                <div class="text-small pt-3">
-                  A Master of Sport and international regatta medalist, he
-                  speaks the language of the winds, guiding you through every
-                  wave.
-                </div>
-              </div>
-              <div
-                class="footer-card d-flex justify-content-center pb-3 pb-md-4 px-3 px-md-4"
-              >
-                <a href="#"
-                  ><img src="img/facebook-icon.svg" alt="facebook-icon"
-                /></a>
-                <a href="#"
-                  ><img src="img/twitter-icon.svg" alt="twitter-icon"
-                /></a>
-                <a href="#"><img src="img/inst-icon.svg" alt="inst-icon" /></a>
-              </div>
-            </div>
+dl,
+ol,
+ul {
+  margin-bottom: 0;
+}
 
-            <div class="card section-bg-white">
-              <picture>
-                <img
-                  src="img/card-image-9.png"
-                  srcset="img/card-image-9.png 768w, img/card-image-9.png 1200w"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
-                  alt="card-image"
-                  width="535"
-                  height="357"
-                  loading="eager"
-                  class="rounded-20"
-                />
-              </picture>
-              <div
-                class="content-card text-center justify-content-start py-3 px-3 px-md-4"
-              >
-                <h4 class="text-uppercase">MYKHAILO KONSTANtAS</h4>
-                <div class="text-small pt-3">
-                  Wise and experienced Captain, a Master of Leadership who
-                  brings teams together to navigate both the seas and your
-                  potential.
-                </div>
-              </div>
-              <div
-                class="footer-card d-flex justify-content-center pb-3 pb-md-4 px-3 px-md-4"
-              >
-                <a href="#"
-                  ><img src="img/facebook-icon.svg" alt="facebook-icon"
-                /></a>
-                <a href="#"
-                  ><img src="img/twitter-icon.svg" alt="twitter-icon"
-                /></a>
-                <a href="#"><img src="img/inst-icon.svg" alt="inst-icon" /></a>
-              </div>
-            </div>
+/* TYPOGRAPHY */
 
-            <div class="card section-bg-white">
-              <picture>
-                <img
-                  src="img/card-image-10.png"
-                  srcset="
-                    img/card-image-10.png  768w,
-                    img/card-image-10.png 1200w
-                  "
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
-                  alt="card-image"
-                  width="535"
-                  height="357"
-                  loading="eager"
-                  class="rounded-20"
-                />
-              </picture>
-              <div
-                class="content-card text-center justify-content-start py-3 px-3 px-md-4"
-              >
-                <h4 class="text-uppercase">VIKTOR KHARCHEVSKY</h4>
-                <div class="text-small pt-3">
-                  An insightful Methodologist who captures the essence of
-                  sailing, focusing on the details that make a difference.
-                </div>
-              </div>
-              <div
-                class="footer-card d-flex justify-content-center pb-3 pb-md-4 px-3 px-md-4"
-              >
-                <a href="#"
-                  ><img src="img/facebook-icon.svg" alt="facebook-icon"
-                /></a>
-                <a href="#"
-                  ><img src="img/twitter-icon.svg" alt="twitter-icon"
-                /></a>
-                <a href="#"><img src="img/inst-icon.svg" alt="inst-icon" /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--  -->
-      <section class="section-slider section-padding">
-        <div class="container">
-          <div class="slider-container">
-            <button
-              class="slider-btn prev-btn"
-              style="
-                background-color: rgba(204, 204, 204, 0);
-                cursor: not-allowed;
-              "
-            >
-              ❮
-            </button>
+h1,
+.h1 {
+  font-family: var(--additional-font-family);
+  font-size: 38px;
+  line-height: 46px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+}
 
-            <div class="slider-wrapper">
-              <div class="slider" style="transform: translateX(0px)">
-                <div class="slide">
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="img/avatar.png"
-                      alt="avatar"
-                      style="width: 40px; height: 40px"
-                    />
-                    <h5 class="m-0 ps-12">Larysa Stepura</h5>
-                  </div>
-                  <img
-                    src="img/review-icon.svg"
-                    alt="review-icon"
-                    style="max-width: 90px; height: 18px"
-                    class="mt-16"
-                  />
-                  <div class="fw-bold my-16 p-text">Grateful start</div>
-                  <p class="p-text">
-                    I had my first yacht charter experience with this company,
-                    and I'm so thankful they introduced me to the world of
-                    sailing.
-                  </p>
-                </div>
-                <div class="slide">
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="img/avatar.png"
-                      alt="avatar"
-                      style="width: 40px; height: 40px"
-                    />
-                    <h5 class="m-0 ps-12">Vitaliy Mironenko</h5>
-                  </div>
-                  <img
-                    src="img/review-icon.svg"
-                    alt="review-icon"
-                    style="max-width: 90px; height: 18px"
-                    class="mt-16"
-                  />
-                  <div class="fw-bold my-16 p-text">INCREDIBLE VIBE</div>
-                  <p class="p-text">
-                    We sailed through various conditions, exploring new coasts,
-                    but what stood out was the incredible atmosphere the crew
-                    created among the guests.
-                  </p>
-                </div>
-                <div class="slide">
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="img/avatar.png"
-                      alt="avatar"
-                      style="width: 40px; height: 40px"
-                    />
-                    <h5 class="m-0 ps-12">Vanyochok Lukash</h5>
-                  </div>
-                  <img
-                    src="img/review-icon.svg"
-                    alt="review-icon"
-                    style="max-width: 90px; height: 18px"
-                    class="mt-16"
-                  />
-                  <div class="fw-bold my-16 p-text">
-                    Adventure makes memories
-                  </div>
-                  <p class="p-text">
-                    It was important for me to explore various routes and
-                    destinations until I felt completely at ease, and with this
-                    charter, I had the chance to do just that! Thank you!
-                  </p>
-                </div>
-                <div class="slide">
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="img/avatar.png"
-                      alt="avatar"
-                      style="width: 40px; height: 40px"
-                    />
-                    <h5 class="m-0 ps-12">Kyrylo Hryadovkin</h5>
-                  </div>
-                  <img
-                    src="img/review-icon.svg"
-                    alt="review-icon"
-                    style="max-width: 90px; height: 18px"
-                    class="mt-16"
-                  />
-                  <div class="fw-bold my-16 p-text">
-                    Step towards my freedom
-                  </div>
-                  <p class="p-text">
-                    My experience with this yacht charter was a big leap toward
-                    adventure. Now I can easily navigate new waters, plan
-                    unforgettable trips, and enjoy the thrill of sailing with
-                    confidence!
-                  </p>
-                </div>
-                <div class="slide">
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="img/avatar.png"
-                      alt="avatar"
-                      style="width: 40px; height: 40px"
-                    />
-                    <h5 class="m-0 ps-12">Kindrat Denysenko</h5>
-                  </div>
-                  <img
-                    src="img/review-icon.svg"
-                    alt="review-icon"
-                    style="max-width: 90px; height: 18px"
-                    class="mt-16"
-                  />
-                  <div class="fw-bold my-16 p-text">Strong Start</div>
-                  <p class="p-text">
-                    With the support of this yacht charter, I set off on my
-                    sailing journey, and now I explore incredible destinations
-                    as a yacht guest. The experience here has truly been the
-                    perfect start to my adventure!
-                  </p>
-                </div>
-                <div class="slide">
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="img/avatar.png"
-                      alt="avatar"
-                      style="width: 40px; height: 40px"
-                    />
-                    <h5 class="m-0 ps-12">Vitaliy Mironenko</h5>
-                  </div>
-                  <img
-                    src="img/review-icon.svg"
-                    alt="review-icon"
-                    style="max-width: 90px; height: 18px"
-                    class="mt-16"
-                  />
-                  <div class="fw-bold my-16 p-text">INCREDIBLE VIBE</div>
-                  <p class="p-text">
-                    We sailed through various conditions, exploring new coasts,
-                    but what stood out was the incredible atmosphere the crew
-                    created among the guests.
-                  </p>
-                </div>
-                <div class="slide">
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="img/avatar.png"
-                      alt="avatar"
-                      style="width: 40px; height: 40px"
-                    />
-                    <h5 class="m-0 ps-12">Vanyochok Lukash</h5>
-                  </div>
-                  <img
-                    src="img/review-icon.svg"
-                    alt="review-icon"
-                    style="max-width: 90px; height: 18px"
-                    class="mt-16"
-                  />
-                  <div class="fw-bold my-16 p-text">
-                    Adventure makes memories
-                  </div>
-                  <p class="p-text">
-                    It was important for me to explore various routes and
-                    destinations until I felt completely at ease, and with this
-                    charter, I had the chance to do just that! Thank you!
-                  </p>
-                </div>
-                <div class="slide">
-                  <div class="d-flex align-items-center">
-                    <img
-                      src="img/avatar.png"
-                      alt="avatar"
-                      style="width: 40px; height: 40px"
-                    />
-                    <h5 class="m-0 ps-12">Kyrylo Hryadovkin</h5>
-                  </div>
-                  <img
-                    src="img/review-icon.svg"
-                    alt="review-icon"
-                    style="max-width: 90px; height: 18px"
-                    class="mt-16"
-                  />
-                  <div class="fw-bold my-16 p-text">
-                    Step towards my freedom
-                  </div>
-                  <p class="p-text">
-                    My experience with this yacht charter was a big leap toward
-                    adventure. Now I can easily navigate new waters, plan
-                    unforgettable trips, and enjoy the thrill of sailing with
-                    confidence!
-                  </p>
-                </div>
-              </div>
-            </div>
+@media (min-width: 768px) {
+  h1,
+  .h1 {
+    font-size: 52px;
+    line-height: 68px;
+  }
+}
 
-            <button
-              class="slider-btn next-btn"
-              style="background-color: rgba(0, 0, 0, 0.03); cursor: pointer"
-            >
-              ❯
-            </button>
-          </div>
-        </div>
-      </section>
-      <!--  -->
-      <div class="section-info section-bg-orange">
-        <div
-          class="container d-flex flex-column flex-md-row justify-content-between align-items-center py-3"
-        >
-          <p class="fw-bold pb-3 pb-sm-0 pe-0 pe-sm-3">
-            Heads up! The next charter is filling up fast. Join the community of
-            explorers!
-          </p>
-          <a href="#" class="btn custom-btn custom-btn-mini">book now</a>
-        </div>
-      </div>
-      <!--  -->
-      <section class="section-bg-blue section-padding mt-60">
-        <div class="container rounded-0">
-          <div class="grid-section align-items-center">
-            <div class="grid-item-img col-12 col-md-10 col-lg-12 m-auto">
-              <div class="position-relative">
-                <picture>
-                  <img
-                    src="img/charter/surfer-img-2.png"
-                    srcset="
-                      img/charter/surfer-img-2.png  768w,
-                      img/charter/surfer-img-2.png 1200w
-                    "
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
-                    alt="surfer-img"
-                    width="535"
-                    height="357"
-                    loading="eager"
-                    class="rounded-0 rounded-20"
-                  />
-                </picture>
-              </div>
-            </div>
-            <div class="grid-item px-3 p-sm-0">
-              <div class="pre-text">
-                <div>Location</div>
-              </div>
-              <h2 class="my-38">Strong seas for stronger sailors</h2>
-              <p>
-                Chartering a yacht from Tenerife to La Palma or La Gomera offers
-                an exceptional adventure. Explore the vibrant islands, navigate
-                diverse coastlines, and enjoy the perfect mix of relaxation and
-                challenge. These waters provide a stunning backdrop for
-                discovering new horizons at your own pace.
-              </p>
-              <p>
-                These breathtaking destinations require curiosity and adventure,
-                providing the ultimate experience for those seeking
-                unforgettable journeys on the water.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--  -->
-      <section class="section-bg-blue section-padding">
-        <div class="container">
-          <div class="grid-section">
-            <div class="grid-item">
-              <h2 class="my-38 mt-0">how to find us</h2>
-              <span class="fw-bold d-block">Yacht Charter</span>
-              <span class="d-block">Aegina</span>
-              <span class="d-block"
-                >Leof. Dimokratias, Portes 180 10, Greece</span
-              >
-            </div>
-            <div class="grid-item-img col-12 col-md-10 col-lg-12 m-auto">
-              <iframe
-                class="position-relative rounded-10 w-100"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1131.7363166457126!2d23.4288185!3d37.7456144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1cd751b5bbe0b%3A0xc86f7f366357be05!2sYachtCamp!5e1!3m2!1sru!2sua!4v1727113270711!5m2!1sru!2sua"
-                allowfullscreen=""
-                aria-hidden="false"
-                tabindex="0"
-                style="height: 50vh"
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--  -->
-      <section class="section-padding section-contact-form">
-        <div class="container">
-          <div class="pre-text text-uppercase text-center mb-38">
-            contact us
-          </div>
-          <div class="section-bg-orange p-50 rounded-20">
-            <div class="row g-5 align-items-end">
-              <div
-                class="col-lg-6 d-flex flex-column justify-content-between px-2"
-              >
-                <div class="h2 pb-60">
-                  <span class="d-block">Ready for your adventure?</span>
-                  <span class="d-block text-blue">Let’s discuss!</span>
-                </div>
-                <div>
-                  <div class="pre-text text-uppercase">Get in touch</div>
-                  <div class="contact mt-24">
-                    <p class="contact-icon email">
-                      <span style="word-break: break-word"
-                        >fergusyachts@fergusyachts.com</span
-                      >
-                    </p>
-                    <p class="contact-icon phone">+46 188 008 125</p>
-                    <p class="contact-icon phone-two">+47 572 108 00</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 px-2">
-                <form id="contact-form">
-                  <div class="row g-3">
-                    <div class="col-12">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="your-name"
-                        name="your-name"
-                        placeholder="Your name"
-                        required=""
-                        data-has-listeners="true"
-                      />
-                    </div>
-                    <div class="col-12">
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="your-email"
-                        name="your-email"
-                        placeholder="Your email"
-                        required=""
-                        data-has-listeners="true"
-                      />
-                    </div>
-                    <div class="col-12">
-                      <textarea
-                        class="form-control resizable-textarea"
-                        id="your-message"
-                        name="your-message"
-                        placeholder="Your message"
-                        data-has-listeners="true"
-                      ></textarea>
-                    </div>
-                    <div class="col-12">
-                      <button
-                        type="submit"
-                        class="btn custom-btn mt-24 mt-md-40"
-                        id="submit-btn"
-                      >
-                        Send Message
-                      </button>
-                    </div>
-                  </div>
-                  <div class="success-message mt-2" id="response-message">
-                    Thank you! We will contact you soon.
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <button
-        id="backToTopBtn"
-        class="back-to-top-btn"
-        style="display: inline-block"
-      ></button>
-    </main>
-    <footer class="section-footer section-bg-orange section-padding">
-      <div class="container">
-        <div class="flex-container">
-          <div class="flex-item">
-            <h4 class="pb-25 text-uppercase">charter</h4>
-            <a href="#" class="footer-link">experiences</a>
-            <a href="#" class="footer-link">Yacht Charter</a>
-          </div>
-          <div class="flex-item">
-            <h4 class="pb-25 text-uppercase">
-              Yacht Charter <br />destinations
-            </h4>
-            <a href="#" class="footer-link">GREECE Yacht Charter</a>
-            <a href="#" class="footer-link">CANARY ISLANDS Yacht Charter</a>
-            <a href="#" class="footer-link">CROATIA Yacht Charter</a>
-          </div>
-          <div class="flex-item">
-            <h4 class="pb-25 text-uppercase">Other</h4>
-            <a href="#" class="footer-link">About us</a>
-            <a href="#" class="footer-link">FAQ</a>
-            <a href="#" class="footer-link">guides</a>
-          </div>
-          <div class="flex-item">
-            <h4 class="pb-25 text-uppercase">Our LOCATIONS</h4>
-            <div class="footer-subblock">
-              <div class="h5 mb-3 fw-bold text-uppercase">Greece (Aegina)</div>
-              <p class="mb-2">Leof. Dimokratias, Portes 180 10, <br />Greece</p>
-              <a href="#" class="link-footer">View on Map</a>
-            </div>
-            <div class="footer-subblock">
-              <p class="h5 fw-bold text-uppercase">Canary Islands (Tenerife)</p>
-              <p class="mb-2">
-                C. Via Tr 1 Cueva Bermeja, <br />38180 Santa Cruz de Tenerife,
-                <br />Spain
-              </p>
-              <a href="#" class="link-footer">View on Map</a>
-            </div>
-            <div class="footer-subblock">
-              <div class="h5 mb-3 fw-bold text-uppercase">Croatia (Split)</div>
-              <p class="mb-2">Split, Croatia</p>
-              <a href="#" class="link-footer">View on Map</a>
-            </div>
-          </div>
-          <div class="contact flex-item">
-            <h4 class="pb-25 text-uppercase">Contact us</h4>
-            <p class="contact-icon email">
-              <span style="word-break: break-word"
-                >fergusyachts@fergusyachts.com</span
-              >
-            </p>
-            <p class="contact-icon phone">+46 188 008 125</p>
-            <p class="contact-icon phone-two">+47 572 108 00</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- SCRIPTS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/library/jquery.min.js"></script>
-    <script src="js/library/aos.js"></script>
-    <script src="js/library/jquery.min.js"></script>
-    <script src="js/library/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
+h2,
+.h2 {
+  font-family: var(--additional-font-family);
+  font-size: 28px;
+  line-height: 38px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const navbar = document.getElementById("navbar");
+@media (min-width: 768px) {
+  h2,
+  .h2 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
 
-        window.addEventListener("scroll", function () {
-          if (window.scrollY > 10) {
-            navbar.classList.add("scrolled");
-          } else {
-            navbar.classList.remove("scrolled");
-          }
-        });
-      });
-    </script>
-  </body>
-</html>
+.h2-add {
+  font-family: var(--additional-font-family);
+  font-size: 32px;
+  line-height: 44px;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .h2-add {
+    font-size: 38px;
+    margin-bottom: 40px;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 24px;
+  line-height: 36px;
+  font-family: var(--additional-font-family);
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  h3,
+  .h3 {
+    font-size: 38px;
+    line-height: 44px;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: var(--additional-font-family);
+  font-weight: 600;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  h4,
+  .h4 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+h5,
+.h5 {
+  font-size: 15px;
+  line-height: 18px;
+  font-family: var(--base-font-family);
+  text-transform: uppercase;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pt-32 {
+  padding-top: 35px;
+}
+
+.pb-25 {
+  padding-bottom: 25px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.pb-60 {
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .pb-60 {
+    padding-bottom: 60px;
+  }
+}
+
+.pt-60 {
+  padding-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .pt-60 {
+    padding-top: 60px;
+  }
+}
+
+.mt-60 {
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .mt-60 {
+    margin-top: 60px;
+  }
+}
+
+.mb-60 {
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .mb-60 {
+    margin-bottom: 60px;
+  }
+}
+
+.pb-100 {
+  padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .pb-100 {
+    padding-bottom: 100px;
+  }
+}
+
+.pt-100 {
+  padding-top: 50px;
+}
+
+@media (min-width: 768px) {
+  .pt-100 {
+    padding-top: 100px;
+  }
+}
+
+.mt-100 {
+  margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+  .mt-100 {
+    margin-top: 100px;
+  }
+}
+
+.mb-100 {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .mb-100 {
+    margin-bottom: 100px;
+  }
+}
+
+.my-60 {
+  margin: 40px 0;
+}
+
+@media (min-width: 768px) {
+  .my-60 {
+    margin: 60px 0;
+  }
+}
+
+.py-60 {
+  padding: 40px 0;
+}
+
+@media (min-width: 768px) {
+  .py-60 {
+    padding: 60px 0;
+  }
+}
+
+.py-100 {
+  padding: 50px 0;
+}
+
+@media (min-width: 768px) {
+  .py-100 {
+    padding: 100px 0;
+  }
+}
+
+.my-100 {
+  margin: 50px 0;
+}
+
+@media (min-width: 768px) {
+  .my-100 {
+    margin: 100px 0;
+  }
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.pb-14 {
+  padding-bottom: 14px;
+}
+
+.p-50 {
+  padding: 38px;
+}
+
+@media (min-width: 992px) {
+  .p-50 {
+    padding: 50px;
+  }
+}
+
+.my-38 {
+  margin: 28px 0;
+}
+
+@media (min-width: 768px) {
+  .my-38 {
+    margin: 38px 0;
+  }
+}
+
+.mb-38 {
+  margin-bottom: 38px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.ps-12 {
+  padding-left: 12px;
+}
+
+.my-16 {
+  margin: 16px 0;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+
+p + p {
+  padding-top: 16px;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.p-text {
+  font-size: 16px;
+}
+
+b,
+strong {
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.fw-bold {
+  font-weight: 600;
+}
+
+picture,
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.rounded-10 {
+  border-radius: 10px;
+}
+
+.rounded-20 {
+  border-radius: 20px;
+}
+
+@media (max-width: 580px) {
+  img.rounded-0,
+  .container.rounded-0 {
+    border-radius: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+/* GENERAL */
+.pre-text {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.sub-text {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.sub-text-title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.sub-text-title {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.text-small {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(24, 29, 56, 0.8);
+}
+
+.section-bg-white {
+  color: #181d38;
+  background: #fff;
+}
+
+.section-bg-blue {
+  color: #181d38;
+  background: #e9f8ff;
+}
+
+.section-bg-orange {
+  color: #181d38;
+  background: #fffae7;
+}
+
+.badge-wrapp {
+  top: 14px;
+  right: 14px;
+  left: 14px;
+  gap: 10px;
+}
+
+.badge-orange {
+  background: #fffae7;
+  color: #181d38;
+  border-radius: 18px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 8px 12px;
+}
+
+.badge-blue {
+  background: #38addf;
+  color: #fffae7;
+  border-radius: 18px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  padding: 8px 12px;
+  height: fit-content;
+}
+
+.text-blue {
+  color: #38addf;
+}
+
+/* BUTTON */
+
+.custom-btn {
+  font-family: var(--additional-font-family);
+  background: #38addf;
+  border-radius: 14px;
+  color: #fffae7;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 10px 28px;
+  max-height: 60px;
+  width: 100%;
+  min-width: 260px;
+  max-width: 260px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.custom-btn.custom-btn-mini {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 6px 20px;
+  min-width: 136px;
+  max-width: 136px;
+}
+
+.custom-btn:hover {
+  background: #0281b7;
+}
+
+.additional-btn-arrow {
+  font-family: var(--base-font-family);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  background: none;
+  color: #38addf;
+  position: relative;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.additional-btn-arrow::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 2px;
+  border: solid #38addf;
+  border-width: 0 2px 2px 0;
+  transform: rotate(-45deg);
+  position: relative;
+  top: 0px;
+  transition: all 0.5s ease;
+}
+
+.additional-btn-arrow:hover::after {
+  transform: translateX(6px) rotate(-45deg);
+}
+
+#content {
+  padding-top: 0;
+}
+
+/* SECTION NAVBAR */
+
+.nav {
+  margin: 0;
+}
+
+.navbar {
+  padding: 12px 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background: transparent;
+  transition: all 0.5s ease;
+  z-index: 10;
+}
+
+@media (min-width: 1280px) {
+  .navbar {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .navbar .container {
+    max-width: 100%;
+  }
+}
+
+.navbar.scrolled {
+  padding: 0;
+  background-color: rgb(29 28 28 / 70%);
+  box-shadow: 0 0 10px rgb(29 28 28 / 60%);
+  transition: all 0.5s ease;
+  z-index: 100;
+}
+
+@media (min-width: 1280px) {
+  .navbar.scrolled {
+    padding: 6px 25px 6px 25px;
+  }
+}
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler {
+  height: 45px;
+}
+
+.navbar-toggler span {
+  display: block;
+  background-color: #181d38;
+  height: 2px;
+  width: 25px;
+  margin-top: 6px;
+  margin-bottom: 4px;
+  transform: rotate(0deg);
+  position: relative;
+  opacity: 1;
+}
+
+.navbar-toggler.collapsed span {
+  background-color: #fffae7;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  position: absolute;
+  top: 0px;
+  transform: rotate(135deg);
+  opacity: 0.9;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  visibility: hidden;
+  background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  position: absolute;
+  top: 0px;
+  transform: rotate(-135deg);
+  opacity: 0.9;
+}
+
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+  transition: transform 0.35sease-in-out;
+}
+
+.navbar.scrolled .additional-btn {
+  padding: 8px;
+}
+
+.navbar.show {
+  padding: 0;
+  z-index: 100;
+}
+
+.navbar.show .container {
+  margin-bottom: auto;
+  padding: 0;
+  max-width: 100%;
+}
+
+.navbar.scrolled .navbar-brand {
+  padding: 12px 0;
+}
+
+@media (min-width: 768px) {
+  .navbar.scrolled .navbar-brand {
+    font-size: 28px;
+  }
+}
+
+.navbar.scrolled .navbar-brand img {
+  width: 80px;
+}
+
+@media (min-width: 1280px) {
+  .navbar-expand-lg .navbar-collapse {
+    flex-basis: content;
+    display: flex;
+  }
+}
+
+.navbar-expand-lg .navbar-nav .nav-item {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.nav-item .nav-link {
+  color: #fffae7;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0;
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+}
+
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+  border-bottom: 1px solid #fffae7;
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  margin: 0;
+  width: 30px;
+  height: 35px;
+  outline: none;
+}
+
+.navbar-collapse {
+  justify-content: center;
+  width: 100%;
+  color: #fffae7;
+}
+
+.navbar-collapse.show {
+  margin: auto;
+  text-align: center;
+  background: rgba(255, 250, 231, 0.95);
+  color: #181d38;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) {
+  .navbar-collapse.show {
+    width: 40%;
+  }
+}
+
+.navbar-collapse.show .nav-link {
+  color: #181d38;
+  line-height: 44px;
+}
+
+.navbar-collapse.show .nav-link:hover {
+  border-bottom: 1px solid #181d38;
+}
+
+.navbar-collapse.show .navbar-nav {
+  background: #fff;
+  width: 100%;
+}
+
+.navbar-collapse.show .nav-bottom-wrap .navbar-nav {
+  background: #efedeb;
+}
+
+.navbar-collapse.show .nav-item .fw-bold {
+  font-family: var(--base-font-family);
+}
+
+.navbar-collapse.show .nav,
+.navbar-collapse.show .contact-wrapp {
+  display: flex;
+  flex-direction: column;
+  line-height: 44px;
+}
+
+@media (max-width: 1279px) {
+  .navbar-toggler {
+    position: relative;
+    z-index: 2;
+  }
+
+  .navbar-collapse {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+  }
+
+  .navbar-collapse.show {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background: transparent;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before,
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease,
+    -webkit-transform 300ms 350ms ease;
+  top: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+  transform: rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  transform: rotate(-45deg);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background: #011928;
+  transition: background 10ms 300ms ease;
+  display: block;
+  width: 30px;
+  height: 2px;
+  position: relative;
+}
+
+.navbar-toggler .navbar-toggler-icon::before,
+.navbar-toggler .navbar-toggler-icon::after {
+  transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease,
+    -webkit-transform 300ms 50ms ease;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background: #011928;
+  width: 20px;
+  height: 2px;
+  content: "";
+}
+
+.navbar-toggler .navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler .navbar-toggler-icon::after {
+  top: 8px;
+}
+
+.navbar-brand img {
+  transition: all 0.5s ease-in;
+  width: 104px;
+  padding: 0 8px;
+}
+
+.navbar-brand {
+  font-family: var(--additional-font-family);
+  font-size: 34px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+header .navbar-brand {
+  color: #fffae7;
+}
+
+/* SECTION MAIN */
+header .main-content {
+  --bs-gutter-x: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1 1 33.33%;
+  position: relative;
+  overflow: hidden;
+  min-width: 300px;
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.image-header {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: opacity 0.3sease;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fffae7;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(50, 45, 24, 0.7);
+  pointer-events: none;
+  width: 90%;
+}
+
+.slogan {
+  position: absolute;
+  z-index: 5;
+  top: 14%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fffae7;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(50, 45, 24, 0.7);
+}
+
+@media (min-width: 768px) {
+  .slogan {
+    top: 30%;
+  }
+}
+
+@media (min-width: 991px) {
+  header .main-content {
+    overflow: hidden;
+  }
+
+  .overlay-text {
+    top: 58%;
+  }
+}
+
+@media (max-width: 990px) {
+  .col {
+    flex: 1 1 50%;
+  }
+
+  .slogan {
+    top: 16%;
+  }
+
+  .slogan-charter {
+    top: 28%;
+  }
+
+  .image-wrapper {
+    max-height: 530px;
+  }
+
+  .last-block {
+    max-height: 300px;
+  }
+
+  .last-block .overlay-text {
+    top: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .col {
+    flex: 1 1 100%;
+  }
+
+  .first-block .overlay-text {
+    top: 60%;
+  }
+
+  .image-wrapper.first-block {
+    max-height: 460px;
+  }
+
+  .image-wrapper {
+    max-height: 400px;
+  }
+
+  .slogan {
+    top: 10%;
+    font-size: 18px;
+  }
+
+  .slogan-charter {
+    top: 26%;
+  }
+
+  .navbar-brand img {
+    width: 75px;
+  }
+
+  .navbar-brand {
+    font-size: 16px;
+  }
+}
+
+/* GRID SECTION */
+.grid-section {
+  display: grid;
+  column-gap: 40px;
+  row-gap: 16px;
+  gap: 32px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 991px) {
+  .grid-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 64px;
+  }
+}
+/*  */
+.section-card-skills .grid-section {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 768px) {
+  .section-card-skills .grid-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-card-skills .grid-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.section-card-skills .content-card {
+  align-items: start;
+  justify-content: flex-start;
+}
+
+.section-card-skills a {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.section-card-skills a:hover {
+  text-decoration: underline;
+}
+/* SECTION SAIL */
+.section-card-sail .grid-section {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.section-card-sail .footer-card img {
+  width: 32px;
+  height: 32px;
+  border-radius: 0;
+}
+
+.section-card-sail .footer-card {
+  gap: 8px;
+}
+
+@media (min-width: 768px) {
+  .section-card-sail .grid-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 991px) {
+  .section-card-sail .grid-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* SECTION ICON */
+.section-icon .grid-section {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+  padding-top: 60px;
+  border-top: 1px solid transparent;
+}
+
+@media (min-width: 991px) {
+  .section-icon .grid-section {
+    grid-gap: 0px;
+  }
+}
+
+.section-icon .grid-section > .grid-item {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.section-icon .grid-section > .grid-item:not(:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 991px) {
+  .section-icon .grid-section > .grid-item {
+    border-right: none !important;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .section-icon .grid-section > .grid-item:last-child {
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-icon .grid-section > .grid-item:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 480px) {
+  .section-icon .grid-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .section-icon .grid-section {
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 85px;
+  }
+}
+
+.section-card .grid-section {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 480px) {
+  .section-card .grid-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .section-card .grid-section {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* THREE CARD */
+.section-card-three .grid-section {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 480px) {
+  .section-card-three .grid-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .section-card-three .grid-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* SECTION FOOTER */
+.section-footer .grid-section {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.card img {
+  border-radius: 10px 10px 0 0;
+  max-height: 232px;
+  object-fit: cover;
+  object-position: top;
+}
+
+@media (min-width: 768px) {
+  .card img {
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+.card {
+  height: 100%;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    border-radius: 20px;
+  }
+}
+
+.content-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-card .additional-btn-arrow {
+  padding: 50px 0 0;
+}
+
+@media (min-width: 768px) {
+  .section-card .additional-btn-arrow {
+    padding: 90px 0 0;
+  }
+}
+
+/* SLIDER */
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 calc(20% - 20px);
+  margin: 0 10px;
+  background-color: #fafafa;
+  font-size: 18px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-btn {
+  background-color: transparent;
+  color: #38addf;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 14px;
+  padding: 0 9px;
+  transition: background-color 0.3s ease, cursor 0.3s ease;
+}
+
+.prev-btn[disabled],
+.next-btn[disabled] {
+  background-color: rgb(204 204 204 / 0%);
+  cursor: not-allowed;
+}
+
+/* .prev-btn {
+  margin-right: 8px;
+}
+
+.next-btn {
+  margin-left: 8px;
+} */
+
+@media (max-width: 1280px) {
+  .slide {
+    flex: 0 0 calc(25% - 20px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .slide {
+    flex: 0 0 calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .slide {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .slide {
+    flex: 0 0 calc(100% - 20px);
+  }
+}
+
+/* Contact Form */
+.section-contact-form .h2 {
+  line-height: 42px;
+}
+
+@media (min-width: 480px) {
+  .section-contact-form .h2 {
+    line-height: 50px;
+  }
+}
+
+.section-contact-form .form-control,
+.section-contact-form .form-control:focus,
+.section-contact-form .form-control:active {
+  background: #fff;
+  border: 1px solid rgba(24, 29, 56, 0.4);
+  color: #181d38;
+  box-shadow: none;
+}
+
+.section-contact-form .form-control:focus,
+.section-contact-form .form-control:active {
+  border: 1px solid #38addf;
+  background: #fff;
+}
+
+.section-contact-form .text-font-bold {
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .section-contact-form .form-control,
+  .section-contact-form .form-control:focus,
+  .section-contact-form .form-control:active {
+    font-size: 16px;
+  }
+
+  .section-contact-form .text-font-bold {
+    font-weight: normal;
+  }
+}
+
+.section-contact-form .form-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  transition: border 0.25s ease-in-out;
+  height: 40px;
+  overflow: hidden;
+}
+
+.section-contact-form .hidden-label {
+  visibility: hidden;
+}
+
+.section-contact-form .form-control::-webkit-input-placeholder {
+  color: #181d38;
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+
+.section-contact-form .btn {
+  max-width: 100%;
+  min-width: auto;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transform: translate(100px, 0);
+  opacity: 0;
+}
+
+/* Google Chrome, WebKit */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  background-color: #fff !important;
+  color: #181d38 !important;
+  border: 1px solid #38addf;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Firefox */
+input:-moz-autofill,
+textarea:-moz-autofill,
+select:-moz-autofill {
+  background-color: #fff !important;
+  color: #181d38 !important;
+  border: 1px solid #38addf;
+}
+
+input:-webkit-autofill::first-line,
+textarea:-webkit-autofill::first-line {
+  color: #181d38 !important;
+}
+
+input.form-control,
+textarea.form-control {
+  font-family: var(--base-font-family);
+  font-size: 16;
+}
+
+.success-message {
+  color: #38addf;
+  font-size: 16px;
+  display: none;
+}
+
+.resizable-textarea {
+  height: 92px;
+  min-height: 92px;
+  resize: vertical;
+  padding: 8px;
+  line-height: 1.5;
+}
+
+/* CONTACT BLOCK */
+
+.contact p {
+  font-size: 16px;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon::before {
+  content: "";
+  display: inline-block;
+  margin-right: 8px;
+
+  background-repeat: no-repeat;
+}
+
+.email::before {
+  width: 23px;
+  height: 14px;
+  background-image: url(../img/email-icon.svg);
+}
+
+.phone::before {
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/phone-icon.svg);
+}
+
+.phone-two::before {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/message-icon.svg);
+}
+
+header .phone::before {
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/header-phone-icon-one.svg);
+}
+
+header .phone-two::before {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/header-phone-icon.svg);
+}
+
+.navbar-collapse.show .phone::before,
+.navbar-collapse.show .phone-two::before {
+  filter: invert(41%) sepia(82%) saturate(1000%) hue-rotate(180deg)
+    brightness(95%) contrast(90%);
+}
+
+/* FOOTER */
+.footer-subblock + .footer-subblock {
+  margin-top: 25px;
+}
+
+.footer-link {
+  font-size: 15px;
+  color: #002b2d;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-link + .footer-link {
+  margin-top: 16px;
+}
+
+.link-footer {
+  text-decoration: underline;
+}
+
+.section-footer .d-flex {
+  gap: 44px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 52px;
+  justify-content: flex-start;
+}
+
+@media (min-width: 1024px) {
+  .flex-container {
+    gap: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .flex-container {
+    gap: 52px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .flex-container {
+    gap: 44px;
+  }
+}
+
+.flex-item {
+  flex: 0 1 auto;
+  box-sizing: border-box;
+  min-width: 150px;
+}
+
+/* Back to top */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 12px;
+  right: 8px;
+  border: none;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+  background-color: #38addf;
+  padding: 10px;
+  background-image: url("../img/to-top.svg");
+  background-size: 33px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  z-index: 100;
+  transition: transform 0.3s ease;
+}
+
+.back-to-top-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-6px);
+}
+
+/* CHARTER TEMPLATE */
+.top-section {
+  color: #38addf;
+}
+
+.top-section > div {
+  min-width: 60px;
+  max-width: 100%;
+}
+
+@media (min-width: 580px) {
+  .top-section > div {
+    min-width: 120px;
+  }
+}
+
+.top-section > div span {
+  flex: 1;
+}
+
+/* Color Card */
+.card-container {
+  row-gap: 24px;
+}
+
+.card-container .card p,
+.section-card-three .card p {
+  font-size: 16px;
+}
+
+.blue {
+  background-color: #f0fbfc;
+}
+
+.yellow {
+  background-color: #fffae7;
+}
+
+.card-container .col {
+  display: flex;
+  flex: 1 1 calc(33.333% - 40px);
+}
+
+@media (max-width: 990px) {
+  .card-container .col {
+    flex: 1 1 calc(50% - 40px);
+  }
+}
+
+@media (max-width: 767px) {
+  .card-container .col {
+    flex: 1 1 100%;
+  }
+}
+
+.footer-bottom {
+  max-width: 100%;
+  gap: 18px !important;
+}
+
+@media (min-width: 768px) {
+  .footer-bottom {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-bottom {
+    max-width: 60%;
+  }
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: #002b2d;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
