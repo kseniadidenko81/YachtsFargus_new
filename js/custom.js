@@ -21,66 +21,75 @@ $(function () {
   });
 
   // SLIDER
-  const slider = document.querySelector(".slider");
-  const prevBtn = document.querySelector(".prev-btn");
-  const nextBtn = document.querySelector(".next-btn");
-  const slides = document.querySelectorAll(".slide");
+  const sliders = document.querySelectorAll(".slider");
 
-  let currentIndex = 0;
+  sliders.forEach((sliderElement) => {
+    const prevBtn = sliderElement
+      .closest(".slider-container")
+      .querySelector(".prev-btn");
+    const nextBtn = sliderElement
+      .closest(".slider-container")
+      .querySelector(".next-btn");
+    const slides = sliderElement.querySelectorAll(".slide");
 
-  function updateSlider() {
-    const slideWidth = slides[0].offsetWidth + 20;
-    slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-    updateArrowColors();
-  }
+    let currentIndex = 0;
 
-  function updateArrowColors() {
-    if (currentIndex === 0) {
-      prevBtn.style.backgroundColor = "rgb(204 204 204 / 0%)";
-      prevBtn.style.cursor = "not-allowed";
-    } else {
-      prevBtn.style.backgroundColor = "rgb(0 0 0 / 3%)";
-      prevBtn.style.cursor = "pointer";
+    function updateSlider() {
+      const slideWidth = slides[0].offsetWidth + 20;
+      sliderElement.style.transform = `translateX(-${
+        currentIndex * slideWidth
+      }px)`;
+      updateArrowColors();
     }
 
-    if (currentIndex >= slides.length - visibleSlides()) {
-      nextBtn.style.backgroundColor = "rgb(204 204 204 / 0%)";
-      nextBtn.style.cursor = "not-allowed";
-    } else {
-      nextBtn.style.backgroundColor = "rgb(0 0 0 / 3%)";
-      nextBtn.style.cursor = "pointer";
-    }
-  }
+    function updateArrowColors() {
+      if (currentIndex === 0) {
+        prevBtn.style.backgroundColor = "rgba(204, 204, 204, 0)";
+        prevBtn.style.cursor = "not-allowed";
+      } else {
+        prevBtn.style.backgroundColor = "rgba(0, 0, 0, 0.03)";
+        prevBtn.style.cursor = "pointer";
+      }
 
-  nextBtn.addEventListener("click", () => {
-    if (currentIndex < slides.length - visibleSlides()) {
-      currentIndex++;
+      if (currentIndex >= slides.length - visibleSlides()) {
+        nextBtn.style.backgroundColor = "rgba(204, 204, 204, 0)";
+        nextBtn.style.cursor = "not-allowed";
+      } else {
+        nextBtn.style.backgroundColor = "rgba(0, 0, 0, 0.03)";
+        nextBtn.style.cursor = "pointer";
+      }
+    }
+
+    nextBtn.addEventListener("click", () => {
+      if (currentIndex < slides.length - visibleSlides()) {
+        currentIndex++;
+        updateSlider();
+      }
+    });
+
+    prevBtn.addEventListener("click", () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateSlider();
+      }
+    });
+
+    function visibleSlides() {
+      const screenWidth = window.innerWidth;
+      if (screenWidth >= 1280) return 5;
+      if (screenWidth >= 1024) return 4;
+      if (screenWidth >= 768) return 3;
+      if (screenWidth >= 480) return 2;
+      return 1;
+    }
+
+    window.addEventListener("resize", () => {
       updateSlider();
-    }
-  });
+    });
 
-  prevBtn.addEventListener("click", () => {
-    if (currentIndex > 0) {
-      currentIndex--;
+    window.addEventListener("load", () => {
       updateSlider();
-    }
-  });
-
-  function visibleSlides() {
-    const screenWidth = window.innerWidth;
-    if (screenWidth >= 1280) return 5;
-    if (screenWidth >= 1024) return 4;
-    if (screenWidth >= 768) return 3;
-    if (screenWidth >= 480) return 2;
-    return 1;
-  }
-
-  window.addEventListener("resize", () => {
-    updateSlider();
-  });
-
-  window.addEventListener("load", () => {
-    updateSlider();
+    });
   });
 
   // FORM (INPUT + BTN)
