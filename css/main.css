@@ -1632,7 +1632,7 @@ header .phone-two::before {
 .grid-item-logo .d-flex {
   gap: 10px;
   text-decoration: none;
-  margin-top: -14px;
+  margin-top: -12px;
 }
 
 .grid-item-logo img {
