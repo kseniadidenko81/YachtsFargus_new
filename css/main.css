@@ -971,7 +971,7 @@ header .main-content {
 
 .overlay-text {
   position: absolute;
-  top: 50%;
+  top: 54%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fffae7;
@@ -999,7 +999,7 @@ header .main-content {
 
 @media (min-width: 768px) {
   .slogan {
-    top: 30%;
+    top: 34%;
   }
 }
 
@@ -1009,7 +1009,7 @@ header .main-content {
   }
 
   .overlay-text {
-    top: 58%;
+    top: 60%;
   }
 }
 
