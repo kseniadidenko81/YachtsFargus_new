@@ -1094,6 +1094,12 @@ header .main-content {
   }
 }
 
+@media (min-width: 1280px) {
+  .charter-content .overlay-text h1 span {
+    display: block;
+  }
+}
+
 .charter-content .overlay-text p {
   width: 80%;
 }
