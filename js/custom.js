@@ -163,29 +163,19 @@ $(function () {
 });
 
 // ANCHOR
-document
-  .querySelector("#scroll-to-footer .smoothScroll")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".btn-book").forEach(function (button) {
+    button.addEventListener("click", function (event) {
+      event.preventDefault();
 
-    let targetId = this.getAttribute("data-target");
+      const targetSection = document.querySelector(".section-contact-form");
+      if (targetSection) {
+        const offset = 0; //Задавать смещение если нужно сверху
+        const sectionPosition =
+          targetSection.getBoundingClientRect().top + window.scrollY - offset;
 
-    if (!targetId || targetId === "#") return;
-
-    let targetSection = document.querySelector(targetId);
-
-    if (targetSection) {
-      let navbarHeight = 49;
-      let targetPosition =
-        targetSection.getBoundingClientRect().top +
-        window.scrollY -
-        navbarHeight;
-
-      window.scrollTo({
-        top: targetPosition,
-        behavior: "smooth",
-      });
-    } else {
-      console.error("Target section not found:", targetId);
-    }
+        window.scrollTo({ top: sectionPosition, behavior: "smooth" });
+      }
+    });
   });
+});
