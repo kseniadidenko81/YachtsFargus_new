@@ -1071,10 +1071,16 @@ header .main-content {
 .charter-content .overlay-text {
   bottom: 10%;
   top: auto;
-  left: 42%;
+  left: 45%;
   transform: translate(-50%, 0%);
   text-align: start;
   width: 80%;
+}
+
+@media (min-width: 768px) {
+  .charter-content .overlay-text {
+    left: 42%;
+  }
 }
 
 .charter-content .overlay-text p {
