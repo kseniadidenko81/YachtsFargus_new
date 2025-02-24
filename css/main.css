@@ -1117,6 +1117,24 @@ header .main-content {
 .section-card-skills a:hover {
   text-decoration: underline;
 }
+
+.section-card-skills img {
+  max-height: 340px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .section-card-skills img {
+    max-height: 224px;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-card-skills img {
+    max-height: 265px;
+  }
+}
+
 /* SECTION SAIL */
 .section-card-sail .grid-section {
   display: grid;
@@ -1300,6 +1318,7 @@ header .main-content {
 @media (min-width: 768px) {
   .card img {
     border-radius: 20px 20px 0 0;
+    max-height: 165px;
   }
 }
 
