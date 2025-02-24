@@ -134,8 +134,8 @@ ul {
 h1,
 .h1 {
   font-family: var(--additional-font-family);
-  font-size: 38px;
-  line-height: 46px;
+  font-size: 34px;
+  line-height: 42px;
   font-weight: 600;
   text-transform: uppercase;
   margin: 0;
@@ -976,44 +976,15 @@ header .main-content {
   width: 90%;
 }
 
-.slogan {
-  position: absolute;
-  z-index: 5;
-  top: 14%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fffae7;
-  font-size: 18px;
-  line-height: 24px;
-  text-transform: uppercase;
-  width: 100%;
-  text-align: center;
-  text-shadow: 2px 2px 5px rgba(50, 45, 24, 0.7);
-}
-
-@media (min-width: 768px) {
-  .slogan {
-    top: 34%;
-  }
-}
-
 @media (min-width: 991px) {
   header .main-content {
     overflow: hidden;
-  }
-
-  .overlay-text {
-    top: 60%;
   }
 }
 
 @media (max-width: 990px) {
   .col {
     flex: 1 1 50%;
-  }
-
-  .slogan {
-    top: 16%;
   }
 
   .slogan-charter {
@@ -1038,21 +1009,12 @@ header .main-content {
     flex: 1 1 100%;
   }
 
-  .first-block .overlay-text {
-    top: 60%;
-  }
-
   .image-wrapper.first-block {
     max-height: 460px;
   }
 
   .image-wrapper {
     max-height: 400px;
-  }
-
-  .slogan {
-    top: 10%;
-    font-size: 18px;
   }
 
   .slogan-charter {
