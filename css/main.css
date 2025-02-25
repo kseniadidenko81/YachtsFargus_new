@@ -1200,11 +1200,6 @@ header .main-content {
   z-index: 10;
 }
 
-.section-card-skills .swiper-button-next:hover,
-.swiper-button-prev:hover {
-  background-color: #007bff;
-}
-
 .section-card-skills .image-container {
   position: relative;
   display: inline-block;
