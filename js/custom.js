@@ -170,7 +170,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const targetSection = document.querySelector(".section-contact-form");
       if (targetSection) {
-        const offset = 0; //Задавать смещение если нужно сверху
+        const offset = 0;
         const sectionPosition =
           targetSection.getBoundingClientRect().top + window.scrollY - offset;
 
