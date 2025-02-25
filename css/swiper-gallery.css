@@ -176,6 +176,11 @@
   height: 80vh;
 }
 
+.fullscreen-slider {
+  max-width: 560px;
+  margin: auto;
+}
+
 .fullscreen-close {
   position: absolute;
   top: 20px;
