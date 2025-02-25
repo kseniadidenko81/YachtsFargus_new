@@ -232,7 +232,7 @@ h5,
 }
 
 .pb-25 {
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 }
 
 .mt-40 {
@@ -1070,6 +1070,18 @@ header .main-content {
   width: 80%;
 }
 
+/* soleMio header */
+.section-header .navbar {
+  padding: 12px 0;
+  background-color: rgb(29 28 28 / 70%);
+  box-shadow: 0 0 10px rgb(29 28 28 / 60%);
+  z-index: 100;
+}
+
+.section-header .navbar.scrolled {
+  padding: 0;
+}
+
 /* GRID SECTION */
 .grid-section {
   display: grid;
@@ -1133,6 +1145,83 @@ header .main-content {
   .section-card-skills img {
     max-height: 238px;
   }
+}
+
+.section-card-skills .swiper {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.section-card-skills .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-card-skills .swiper-slide img {
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.section-card-skills .swiper-pagination {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.section-card-skills .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(37 36 36);
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.section-card-skills .swiper-pagination-bullet-active {
+  background-color: #38addf;
+}
+
+.section-card-skills .swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px;
+  z-index: 10;
+}
+
+.section-card-skills .swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #007bff;
+}
+
+.section-card-skills .image-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.section-card-skills .overlay-text {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  font-size: 20px;
+  background: rgba(50, 45, 24, 0.5);
+  border-radius: 4px;
+  padding: 4px 6px;
+  width: max-content;
+  transform: none;
+  font-weight: 500;
 }
 
 /* SECTION SAIL */
@@ -1868,4 +1957,67 @@ header .phone-two::before {
   .section-info .custom-btn {
     font-size: 20px;
   }
+}
+
+/*  */
+.info-wrapper {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+
+.info-list {
+  height: 3rem;
+}
+
+.info-list .fa,
+.info-list .fas,
+.info-list .bi {
+  font-size: 18px;
+  color: rgba(33, 37, 41, 0.75);
+}
+
+.info-list i {
+  font-size: 14px;
+}
+
+.info-text {
+  border-bottom: 1px solid #eee;
+}
+
+.info-wrapper-bottom,
+.info-wrapper-bottom ul,
+.info-wrapper-bottom li {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+.info-wrapper-bottom li {
+  display: flex;
+  align-items: center;
+}
+
+.sub-heading {
+  text-transform: none;
+}
+
+@media (max-width: 420px) {
+  .list-icon li {
+    width: 100% !important;
+  }
+}
+
+.icon-text {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-text-mini {
+  width: 20px;
+  height: 20px;
+}
+
+.subtitle-wrapper {
+  border-bottom: 1px solid #eee;
 }
